@@ -4239,6 +4239,24 @@ return {
           }
         }
       },
+      "keyUsageSyntax": {
+        "name": "keyUsage",
+        "type": {
+          "name": "BIT STRING",
+          "type": "builtin",
+          "content": {
+            "digitalSingature": 0,
+            "nonRepudation": 1,
+            "keyEncipherment": 2,
+            "dataEncipherment": 3,
+            "keyAgreement": 4,
+            "keyCertSign": 5,
+            "cRLSign": 6,
+            "encipherOnly": 7,
+            "decipherOnly": 8
+          }
+        }
+      },
       "ExtKeyUsageSyntax": {
         "name": "ExtKeyUsageSyntax",
         "type": {

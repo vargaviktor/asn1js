@@ -2685,10 +2685,11 @@ return {
 "2.23.134.1.2.2.3": { "d": "postSignumPublicCA", "c": "PostSignum CA" },
 "2.23.134.1.2.1.8.210": { "d": "postSignumCommercialServerPolicy", "c": "PostSignum CA" },
 "2.23.136.1.1.1": { "d": "mRTDSignatureData", "c": "ICAO MRTD" },
-"2.23.140.1.1": { "d": "evGuidelines", "c": "CAB Certificate Policies" },
-"2.23.140.1.2.1": { "d": "domainValidated", "c": "CAB Certificate Policies" },
-"2.23.140.1.2.2": { "d": "subjectIdentityValidated", "c": "CAB Certificate Policies" },
-"2.23.140.1.4.1": { "d": "codeSigningRequirements", "c": "CAB Certificate Policies" },
+//Removed from here, added complete reference to the end 2023-09-28
+//"2.23.140.1.1": { "d": "evGuidelines", "c": "CAB Certificate Policies" },
+//"2.23.140.1.2.1": { "d": "domainValidated", "c": "CAB Certificate Policies" },
+//"2.23.140.1.2.2": { "d": "subjectIdentityValidated", "c": "CAB Certificate Policies" },
+//"2.23.140.1.4.1": { "d": "codeSigningRequirements", "c": "CAB Certificate Policies" },
 "2.54.1775.2": { "d": "hashedRootKey", "c": "SET.  Deprecated, use (2 23 42 7 0) instead", "w": true },
 "2.54.1775.3": { "d": "certificateType", "c": "SET.  Deprecated, use (2 23 42 7 0) instead", "w": true },
 "2.54.1775.4": { "d": "merchantData", "c": "SET.  Deprecated, use (2 23 42 7 0) instead", "w": true },
@@ -2727,5 +2728,48 @@ return {
 "1.3.6.1.4.1.40869.1.1.22.3": { "d": "TWCA EV policy", "c": "TWCA Root Certification Authority" },
 "2.16.840.1.113733.1.7.23.6": { "d": "VeriSign EV policy", "c": "VeriSign Class 3 Public Primary Certification Authority" },
 "2.16.840.1.114171.500.9": { "d": "Wells Fargo EV policy", "c": "Wells Fargo WellsSecure Public Root Certificate Authority" },
+// CAB Forum OID Repository elements https://cabforum.org/object-registry/ 2023-09-28
+// BASE OID
+"2.23.140": {"d": "CA/Browser Forum OID", "c": "CA/Browser Forum base node (assigned organization identifier)"
+// CERTIFICATE POLICIES
+"2.23.140.1": {"d": "CA/B Forum CPs", "c": "CA/Browser Forum Certificate Policies base node"},
+"2.23.140.1.1": {"d": "CA/B Forum extended-validation", "c": "CA/Browser Forum EV Certificate Policy"},
+"2.23.140.1.2": {"d": "CA/B Forum baseline-requirements CPs", "c": "CA/Browser Forum TLS Baseline Requirements Certificate Policies"},
+"2.23.140.1.2.1": {"d": "CA/B Forum domain-validated", "c": "CA/Browser Forum TLS Baseline DV Certificate Policy"},
+"2.23.140.1.2.2": {"d": "CA/B Forum organization-validated", "c": "CA/Browser Forum TLS Baseline OV Certificate Policy"},
+"2.23.140.1.2.3": {"d": "CA/B Forum individual-validated", "c": "CA/Browser Forum TLS Baseline IV Certificate Policy"},
+"2.23.140.1.3": {"d": "CA/B Forum extended-validation-codesigning", "c": "CA/Browser Forum EV Code Signing Requirements Certificate Policy"},
+"2.23.140.1.4": {"d": "CA/B Forum codesigning-requirements CPs", "c": "CA/Browser Forum Code Signing Baseline Requirements Certificate Policies"},
+"2.23.140.1.4.1": {"d": "CA/B Forum codesigning", "c": "CA/Browser Forum TLS Baseline Requirements Certificate Policy"},
+// SMIME MV
+"2.23.140.1.5": {"d": "CA/B Forum smime-requirements CPs", "c": "CA/Browser Forum S/MIME Baseline Requirements Requirements Certificate Policies"},
+"2.23.140.1.5.1": {"d": "CA/B Forum smime-requirements mailbox-validated CPs (MV-X)", "c": "CA/Browser Forum S/MIME Baseline Requirements mailbox-validated (MV-X) Certificate Policies"},
+"2.23.140.1.5.1.1": {"d": "CA/B Forum smime mailbox-validated legacy (MV-L)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime mailbox-validated legacy (MV-L) Certificate Policy"},
+"2.23.140.1.5.1.2": {"d": "CA/B Forum smime mailbox-validated multipurpose (MV-M)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime mailbox-validated multipurpose (MV-M) Certificate Policy"},
+"2.23.140.1.5.1.3": {"d": "CA/B Forum smime mailbox-validated strict (MV-S)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime mailbox-validated strict (MV-S) Certificate Policy"},
+// SMIME OV
+"2.23.140.1.5.2": {"d": "CA/B Forum smime-requirements organization-validated CPs (OV-X)", "c": "CA/Browser Forum S/MIME Baseline Requirements mailbox-validated (OV-X) Certificate Policies"},
+"2.23.140.1.5.2.1": {"d": "CA/B Forum smime organization-validated legacy (OV-L)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime mailbox-validated legacy (OV-L) Certificate Policy"},
+"2.23.140.1.5.2.2": {"d": "CA/B Forum smime organization-validated multipurpose (OV-M)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime mailbox-validated multipurpose (OV-M) Certificate Policy"},
+"2.23.140.1.5.2.3": {"d": "CA/B Forum smime organization-validated strict (OV-S)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime mailbox-validated strict (OV-S) Certificate Policy"},
+// SMIME SV
+"2.23.140.1.5.3": {"d": "CA/B Forum smime-requirements sponsor-validated CPs (SV-X)", "c": "CA/Browser Forum S/MIME Baseline Requirements sponsor-validated (SV-X) Certificate Policies"},
+"2.23.140.1.5.3.1": {"d": "CA/B Forum smime sponsor-validated legacy (SV-L)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime sponsor-validated legacy (SV-L) Certificate Policy"},
+"2.23.140.1.5.3.2": {"d": "CA/B Forum smime sponsor-validated multipurpose (SV-M)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime sponsor-validated multipurpose (SV-M) Certificate Policy"},
+"2.23.140.1.5.3.3": {"d": "CA/B Forum smime sponsor-validated strict (SV-S)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime sponsor-validated strict (SV-S) Certificate Policy"},
+// SMIME IV
+"2.23.140.1.5.4": {"d": "CA/B Forum smime-requirements individual-validated CPs (IV-X)", "c": "CA/Browser Forum S/MIME Baseline Requirements individual-validated (IV-X) Certificate Policies"},
+"2.23.140.1.5.4.1": {"d": "CA/B Forum smime individual-validated legacy (IV-L)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime individual-validated legacy (IV-L) Certificate Policy"},
+"2.23.140.1.5.4.2": {"d": "CA/B Forum smime individual-validated multipurpose (IV-M)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime individual-validated multipurpose (IV-M) Certificate Policy"},
+"2.23.140.1.5.4.3": {"d": "CA/B Forum smime individual-validated strict (IV-S)", "c": "CA/Browser Forum S/MIME Baseline Requirements smime individual-validated strict (IV-S) Certificate Policy"},
+// .ONION
+"2.23.140.1.31": {"d": "CA/B Forum TOR EV TLS .onion OID", "c": "CA/Browser Forum TOR Service Descriptor OID for EV TLS certificates for .onion"},
+// CERTIFICATE EXTENSIONS
+"2.23.140.2": {"d": "CA/B Forum Certificate Extensions (2) OID", "c": "CA/Browser Forum Certificate Extensions (2) base node"},
+"2.23.140.2.1": {"d": "CA/B Forum Test certificate Extension (Deprecated)", "c": "CA/Browser Forum Test certificate Certificate Extension (Deprecated)"},
+"2.23.140.3": {"d": "CA/B Forum Cerificate Extensions (3) OID", "c": "CA/Browser Forum Certificate Extensions (3) base node"},
+"2.23.140.3.1": {"d": "CA/B Forum CABFOrgID", "c": "CA/Browser Forum Organization Identifier Field used in EV"},
+// MICROSEC
+//"1.3.6.1.4.1.21528.2": {"d": "Microsec's permanentIdentifier for TSD", "c": "Microsec's permanentIdentifier (organizational part)"},
 "END": ""
 };});
