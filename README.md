@@ -3,7 +3,14 @@ asn1js
 
 asn1js is a JavaScript generic ASN.1 parser/decoder that can decode any valid ASN.1 DER or BER structures.
 
-An example page that can decode Base64-encoded (raw base64, PEM armoring and `begin-base64` are recognized) or Hex-encoded (or local files with some browsers) is included and can be used both [online on the official website](https://lapo.it/asn1js/) or [offline (ZIP file)](https://lapo.it/asn1js/asn1js.zip).
+An example page that can decode Base64-encoded (raw base64, PEM armoring and `begin-base64` are recognized) or Hex-encoded (or local files with some browsers) is included.
+
+How to use the example site?
+============================
+1. Download the zip file from the following link (always the latest version):
+https://github.com/vargaviktor/asn1js/archive/refs/heads/trunk.zip
+2. Unzip it to a directory
+3. Open the index.html in your browser
 
 Usage with `npm` / `yarn`
 -------------------------
